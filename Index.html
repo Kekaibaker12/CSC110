@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -15,17 +14,16 @@
 <div class = header>Kekai's Website</div>
 <div class = underheader>
   
-  <div class=home id=home1>Home</div>
-  <div class=project1 id=proj1>Project1</div>
-  <div class=project2 id=proj2>Project2</div>
-  <div class=project3 id= proj3>Project3</div>
-  <div class=project4 id= proj4>Project4</div>
-  <div class=project5 id= proj5>Project5</div>
-  <div class=project6 id= proj6>Project6</div>
+  <div class=text id=home1 onclick="menuClick(this, 'show1')">Home</div>
+  <div class=text id=proj1 onclick="menuClick(this, 'show2')">Project: Radio</div>
+  <div class=text id=proj2 onclick="menuClick(this, 'show3')">Project: Checklist</div>
+  <div class=text id= proj3 onclick="menuClick(this, 'show4')">Project: TestHover</div>
+  <div class=text id= proj4 onclick="menuClick(this, 'show5')">Project: Input</div>
+  
 </div>
 
-
-  <div class=mainpage>
+  <div class="div1"> 
+    <div id="show1" class="main show">
         
         <div class=parent>
           
@@ -40,10 +38,130 @@
         <div class=right>
           <p>Hi my name is Kekai Baker and i was born in Kanab, Utah. I lived on a Native American reservation for 4 years then moved to Eagle Mountain and lived there ever since. I grew up in a big family 3 brothers and 4 sisters. I play Football here at SVU. I am planning on going on a mission. This Website is going over the multiple projects that i have completed in Authoring for the web.</p>
         </div>
+    </div>
   </div>
          
-    <div id="DOg" class="page"></div>
+    <div id="show2" class="main noshow">
 
+      <div class=page2>
+        <div class="radios" onchange="onClick()">
+          <input type='radio' name='animals' value='1'>Dogs</input><br>
+          <input type='radio' name='animals' value='2'>Cats</input><br>
+          <input type='radio' name='animals' value='3'>Birds</input><br>
+          <input type='radio' name='animals' value='4'>Fish</input><br>
+          <input type='radio' name='animals' value='5'>Kangaroo</input><br>
+
+        </div>
+
+
+        <div id="output1">x</div>
+        <div id="output2">x</div>
+        <div id="output3">x</div>
+        <div id="output4">x</div>
+        <div id="output5">x</div>
+
+        
+      </div>
+
+      
+    </div>
+  <div id="show3" class="main noshow">
+
+    <div class=page3>
+
+      <div>
+        <input type="checkbox" id="idfood1" name="food1" value="Burger">
+        <label for = "food1">I have Burger</label><br>
+        <input type="checkbox" id="idfood2" name="food2" value="Pizza">
+        <label for="food2">I have Pizza</label><br>
+        <input type="checkbox" id="idfood3" name="food3" value="HotDog">
+        <label for = "food3">I have HotDog</label><br>
+        <input type="checkbox" id="idfood4" name="food4" value="Pasta">
+        <label for = "food4">I have Pasta</label><br>
+        <input type="checkbox" id="idfood5" name="food" value="Icecream"
+        <label for = "food5">I have Icecream</label><br>
+
+
+
+      </div>
+      <div>
+      <button id="button" onclick="myFunction()">click me</button>
+      </div>
+
+      <div id="div1a">
+       x
+      </div>
+      <div id="div2a">
+       x
+      </div>
+      <div id="div3a">
+       x
+      </div>
+      <div id="div4a">
+       x
+      </div>
+      <div id="div5a">
+       x
+      </div>
+      <div id="div6a">
+        ?
+      </div>
+
+
+    </div>
+
+
+
+  
+
+
+  </div>
+
+
+  <div id="show4" class="main noshow">
+
+
+    
+    <div class=page4>
+      <div class = "plant1">
+        <div id = "b1" class= "blank">Dog</div>
+        <div id = "b2" class= "blank">Cat</div>
+        <div id = "b3" class= "blank">Cheetah</div>
+        <div id = "b4" class= "blank">Bird</div>
+        <div id = "b5" class= "blank">Snake</div>
+        <div id = "b6" class= "blank">Pizza</div>
+        <div id = "b7" class= "blank">Burger</div>
+        <div id = "b8" class= "blank">Football</div>
+        <div id = "b9" class= "blank">Basketball</div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id=show5 class="main noshow">
+
+   <div class=page5>
+
+     <div id = "input-div"> This is an input text
+       <input id = "input1a" type = "datetime-local" class = "input-class"></input> 
+     </div>
+
+     <div>
+     <button id="my-button" onclick="getValue()">Click Me</button>
+
+     </div>
+     <div id="div3p">
+     Here we will show the value
+     </div>
+
+    
+   </div>
+  </div>
+
+
+    
   
 </body>
 
